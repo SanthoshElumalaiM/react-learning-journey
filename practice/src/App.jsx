@@ -6,8 +6,16 @@ const App = () => {
     <>
     {/* <h1>Welcome to react</h1>
     <UseStatesExample/> */}
-    <Home/>
-  
+    <BrowserRouter>
+    
+    <Routes>
+      <Route path="/" element={<Home/>}></Route>
+      <Route path="/about" element={<About/>}></Route>'
+      <Route path="/contactUs" element={<ContactUS/>}></Route>
+    
+    </Routes>
+    </BrowserRouter>
+      
     </>
   
       
