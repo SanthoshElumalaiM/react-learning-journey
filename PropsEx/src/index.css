@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.card{
+    height: 300px;
+    width: 350px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    background-color: aquamarine;
+    color: blue;
+}
+.out>h1{
+    margin-bottom: 40px;
+}
+.con{
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center;   
+}
