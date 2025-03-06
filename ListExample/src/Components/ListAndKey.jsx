@@ -37,7 +37,7 @@ const ListAndKey = () => {
                     product.map((ele)=>{
                         return(<div className="box" key={ele.id}>
                             <h3>productName:{ele.productName}</h3>
-                            <h3>productName:{ele.price}</h3>
+                            <h3>price:{ele.price}</h3>
                         </div>
                             
                         )
