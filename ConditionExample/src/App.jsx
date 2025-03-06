@@ -29,10 +29,17 @@ import Login from './Components/Login';
 
 const App = () => {
   let islogged=false;
+  let a=1
   return (
     <>
     {
       islogged?<Home/>:<Login/>
+    }
+    {/* {
+      (a%2==0!==0)?<h1>It is even</h1>:<h1>it is odd</h1>
+    } */}
+    {
+      (a%2==0!==0)&&<h1>It is even</h1>
     }
     </>
   )
