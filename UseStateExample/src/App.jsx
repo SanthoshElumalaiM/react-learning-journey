@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import MyName from './Component/MyName'
 
 const App = () => {
 
@@ -16,6 +17,12 @@ const App = () => {
       <h1>{count}</h1>
       <button onClick={increase}>Increase</button>
       <button onClick={decrease}>decrease</button>
+      <button onClick={()=>setCount(count+1)}>increase</button>
+      <button onClick={()=>setCount(count-1)}>decrease</button>
+      
+      <MyName/>
+      
+
     </>
   )
 }
