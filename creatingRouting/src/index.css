@@ -1,0 +1,19 @@
+.nav{
+  height: 80px;
+  background-color: cadetblue;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  
+  
+}
+.nav>ul{
+  gap: 20px;
+}
+.nav>ul>a{
+  display: inline-block;
+  list-style-type: none;
+  margin-left: 20px;
+  
+  
+}
