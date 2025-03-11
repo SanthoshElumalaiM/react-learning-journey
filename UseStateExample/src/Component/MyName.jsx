@@ -6,7 +6,7 @@ const MyName = () => {
     let [isName,setIsName]=useState(true)
 
     let changeName=()=>{
-        setIsName(!isName)
+       setIsName( !isName)
         setName(
             isName?"Sant":"Developer"
         )
