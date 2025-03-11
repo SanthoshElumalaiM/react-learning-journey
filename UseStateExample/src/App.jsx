@@ -21,6 +21,8 @@ const App = () => {
       <button onClick={()=>setCount(count-1)}>decrease</button>
       
       <MyName/>
+
+      
       
 
     </>
