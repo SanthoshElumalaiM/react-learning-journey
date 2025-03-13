@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react'
 import ChangeBackground from './Component/ChangeBackground';
+import PlayVideo from './Component/PlayVideo';
 
 const App = () => {
 
@@ -22,6 +23,7 @@ const App = () => {
     <button onClick={increse}>increment</button>
 
     <ChangeBackground/>
+    <PlayVideo/>
     </>
   )
 }

@@ -5,13 +5,13 @@ const ChangeBackground = () => {
 let color=useRef()
 
 let Change=()=>{
-    color.current.style.backgroundColor="red"
+    color.current.style.color="red"
 }
 
   return (
     <>
-    <div className="background" ref={color}>
-        <h5>This is Heading 1</h5>
+    <div className="background">
+        <h5 ref={color}>This is Heading 1</h5>
 
     <button onClick={Change}>ChangeColor</button>
     </div>
