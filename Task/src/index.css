@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.outer{
+    /* background-color: red; */
+    height: 100vh;
+    display: flex;
+    
+}
+.outer>.left{
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 56%;
+}
+
+.outer>.left>.container>img{
+   
+   width: 400px; 
+}
+.left>.container>.img{
+    margin-right: 290px;
+}
+.outer>.left>.container{
+    /* background-color: black; */
+    height: 300px;
+    width:80%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.left>.container>p{
+    font-size: 30px;
+}
+.outer>.right{
+    /* background-color: blue;   */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 44%;
+    
+
+    
+}
+.right>.container1{
+    height: 300px;
+    width: 400px;
+    box-shadow: 4px 5px 65px #cccc;
+    
+    
+}
+.right>.container1>form{
+    margin: 15px 15px;
+
+}
+
+.container1>form>input,#btn
+{
+    display: block;
+    height: 50px;
+    width: 100%;
+    border-radius: 12px;
+    padding: 20px   ;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    /* background-color: blue; */
+    cursor: pointer;
+}
+
+.container1>form>h6>a:hover{
+    color: aqua;
+    font-size: 15px;
+    transform: all 0.5 ease-in;
+}
+.container1>form>#btn{
+    height: 50px;
+    width: 100%;
+    border-radius: 12px;
+    padding: 20px   ;
+    margin-top: 10px;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: blue;
+    cursor: pointer;
+}
+.container2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.container2>#btn2{
+    height: 50px;
+    width: 70%;
+    border-radius: 12px;
+    padding: 10px   ;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 15px;
+
+    cursor: pointer;
+    background-color: rgb(44, 153, 44);
+}
+.container2>h6>a{
+    font-size: 15px;
+
+}
+.container2>h6>a:hover{
+    color: aqua;
+    transform: all 0.5 ease-in;
+}
+.right>p{
+
+    margin: 20px;
+    font-size: 20px;
+}
+.right>p>span{
+    font-weight: bold;
+}
