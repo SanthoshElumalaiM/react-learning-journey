@@ -16,12 +16,84 @@
 
   height: 400px;
   width: 500px;
-  border: 2px solid black;
+  /* border: 2px solid black; */
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.7);
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center ;
+  padding: 20px;
+  
+ 
 }
-.card>form{
+.card>h1{
+ text-transform: capitalize;
+ margin-bottom: 10px;
+ letter-spacing: 1px;
+ color: #E53888;
+ position: relative;
+ 
+
+ &::after{
+  content: "";
+  height: 3px;
+  width: 0%;
+  background-color:#BE5985;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  transition: width 2s ease-in;
+ }
+ 
+}
+.card>h1:hover::after{
+  
+    width: 100%;
+  
+}
+.card{
+  background-color: #FFEDFA;
+}
+
+.card>form>input{
   display: block;
+  padding: 10px;
+  border-radius: 10px;
+  height: 50px;
+  width: 400px;
+  margin: 10px;
+  outline:none;
+  font-weight: bold;
+  font-size: 15px;
+  letter-spacing: 1px;
+
+  &::placeholder{
+    font-size: 15px;
+    font-weight: bold;
+
+  }
+
+}
+
+.card>form>button{
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  color: white ;
+  background-color:#EC7FA9 ;
+  font-size: 20px;
+  cursor: pointer;
+  letter-spacing: 2px;
+
+
+  &:hover{
+    color: #E53888;
+  }
+}
+form>label{
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 1px;
 }
