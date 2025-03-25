@@ -2,20 +2,20 @@ import React, { useEffect, useState } from 'react'
 
 const WeatherApp = () => {
 
-    let [search,setSearch]=useState("")
-    let [cityData,setCityData]=useState("")   
+    let [search,setSearch]=useState("chennai")
+    let [cityData,setCityData]=useState(null)   
     
     
     let getData=async()=>{
-        let res=await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${search}&appid=88c505d6cfc2336b3ffb631b9a76d116`)
+        let res=await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${search}&units=metric&appid=88c505d6cfc2336b3ffb631b9a76d116`)
         let data=await res.json();
         // console.log(data);
-        setCityData(data)
+        setCityData(data.main)
         
     }
     useEffect(()=>{
         getData()
-    },[search])
+    },[])
 
     
     
@@ -31,11 +31,11 @@ const WeatherApp = () => {
                 </div>
                 
                 {
-                    search?<div className="info">
-                    <h4>{search.name}</h4>
+                    cityData?<div className="info">
+                    <h4>{search}</h4>
                     {/* https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key} */}
-                    <h2>{cityData.main.temp}&deg; C</h2>
-                    <p>Min:{cityData.main.temp_min}&deg; C | Max:{cityData.main.temp_max}&deg; C </p>
+                    <h2>{cityData.temp}&deg; C</h2>
+                    <p>Min:{cityData.temp_min}&deg; C | Max:{cityData.temp_max}&deg; C </p>
                     </div>:<p>Data Not Found</p>
 
                 }
