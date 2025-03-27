@@ -2,13 +2,14 @@ import React, { useRef, useState } from 'react'
 
 const Increase = () => {
 
-       let count= useRef(0)
+       let c= useRef(0)
 
   return (
     <>
-         <h1>count is :{count.current+1}</h1>
+        <hr />
+         <h1>count is :{c.current++}</h1>
     </>
   )
 }
 
-export default Increase
+export default React.memo(Increase)
